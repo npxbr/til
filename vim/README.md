@@ -29,3 +29,12 @@ local config = {
   }
 vim.api.nvim_open_win(buf, config) 
 ```
+
+## customizando o :make
+
+Você pode customizar o comando `:make` para rodar um comando específico, por linguagem. Pra isso, configure o `makeprg` :
+
+```viml
+" golang 
+set makeprg="go build"
+```
