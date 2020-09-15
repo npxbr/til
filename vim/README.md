@@ -38,3 +38,15 @@ Você pode customizar o comando `:make` para rodar um comando específico, por l
 " golang 
 set makeprg="go build"
 ```
+
+# somar / diminuir números
+
+Usando `Ctrl+a` para somar e `Ctrl+x` para diminuir você pode alterar um número no buffer usando diretamente o teclado.
+Exemplos:
+
+```
+101
+Esc
+Ctrl+a " prints 102
+Ctrl+x " prints 101 again
+```
