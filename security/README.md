@@ -1,6 +1,8 @@
-# Passwords
+# Security
 
-## what is the math to get how long password must be?
+## Passwords
+
+- What is the math to get how long password size must be?
 
 ```
 ceil( logC (H * Y * 31556926) )
