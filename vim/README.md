@@ -50,3 +50,7 @@ Esc
 Ctrl+a " prints 102
 Ctrl+x " prints 101 again
 ```
+# Movimentos
+
+- `yiw` - copia palavra onde cursor esta posicionado até antes da prox palavra
+- `yiW` - copia palavra inteira (contando caracteres especiais)
