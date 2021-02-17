@@ -1,5 +1,4 @@
-VIM
-===
+# VIM
 
 Coisas que aprendi no (neo)vim no dia-a-dia
 
@@ -8,7 +7,7 @@ Coisas que aprendi no (neo)vim no dia-a-dia
 Para criar uma floating window você vai precisar primeiro criar um buffer. Para criá-lo, digite:
 
 ```lua
--- primeiro parametro é para dizer que o buffer vai ser listado 
+-- primeiro parametro é para dizer que o buffer vai ser listado
 -- segundo parametro diz se o buffer vai ser temporário, ou "throwaway"
 local buf = vim.api.nvim_buf_create(false, true)
 ```
@@ -18,16 +17,16 @@ Após criar o buffer, crie a janela digitando:
 ```lua
 local config = {
     -- aqui fala sobre quais opcoes de buffer podem ser associadas a janela. Nesse caso eu setei para as minimas possiveis
-    style = "minimal"; 
-    -- aqui fala sobre o posicionamento da janela. Editor é a configuração para usar o tamanho global do editor. 
+    style = "minimal";
+    -- aqui fala sobre o posicionamento da janela. Editor é a configuração para usar o tamanho global do editor.
     -- Também é posivel usar "win" onde as coordenadas usadas sao relativas a uma especifica janela
-    relative = "editor"; 
+    relative = "editor";
     width = width; -- largura da janela
     height = height; -- altura da janela
-    row = row; -- numero de linhas 
+    row = row; -- numero de linhas
     col = col; -- numero de colunas
   }
-vim.api.nvim_open_win(buf, config) 
+vim.api.nvim_open_win(buf, config)
 ```
 
 ## customizando o :make
@@ -35,7 +34,7 @@ vim.api.nvim_open_win(buf, config)
 Você pode customizar o comando `:make` para rodar um comando específico, por linguagem. Pra isso, configure o `makeprg` :
 
 ```viml
-" golang 
+" golang
 set makeprg="go build"
 ```
 
@@ -50,7 +49,17 @@ Esc
 Ctrl+a " prints 102
 Ctrl+x " prints 101 again
 ```
+
 # Movimentos
+
+## Normal mode
 
 - `yiw` - copia palavra onde cursor esta posicionado até antes da prox palavra
 - `yiW` - copia palavra inteira (contando caracteres especiais)
+- `a` - insere no caracter após o atual
+- `I` - abre o cursor no início da linha
+- `A` - abre o cursor no final da linha
+
+## Visual mode
+
+- `Ctrl+v` - seleciona na vertical
