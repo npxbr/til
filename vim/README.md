@@ -59,6 +59,7 @@ Ctrl+x " prints 101 again
 - `a` - insere no caracter após o atual
 - `I` - abre o cursor no início da linha
 - `A` - abre o cursor no final da linha
+- `gx` - abre a url onde o cursor está posicionado 
 
 ## Visual mode
 
