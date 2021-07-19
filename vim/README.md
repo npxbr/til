@@ -56,6 +56,8 @@ Ctrl+x " prints 101 again
 
 - `yiw` - copia palavra onde cursor esta posicionado até antes da prox palavra
 - `yiW` - copia palavra inteira (contando caracteres especiais)
+- `yt<CHAR>` - copia para frente até antes de `<CHAR>`
+- `yT<CHAR>` - copia para trás até antes de `<CHAR>`
 - `a` - insere no caracter após o atual
 - `I` - abre o cursor no início da linha
 - `A` - abre o cursor no final da linha
